@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            color: blueviolet;
+            font-style: italic;
+        }
+
+        #header {
+            color: brown;
+            font-style: oblique;
+        }
+
+        #item {
+            color:blue;
+            font-style: oblique;
+        }
+        .subitem:hover{
+            color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil exercitationem, dignissimos ipsam fugiat voluptatem temporibus quae cum rerum officia ea aliquam laborum facere maxime. Ad, dolore voluptatem! Alias, excepturi distinctio!
+    </p>
+    <h3 >Selectors</h3>
+    <ul>
+        <li id="header">Tag Selectors
+            <ul class="subitem">
+                <li>p { }</li>
+                <li>h1 { }</li>
+                <li>a { }</li>
+            </ul>
+        </li>
+        <li id="item">ID selectors
+           <ul class="subitem">
+            <li id="subitem">#menu { }</li>
+            <li>#header { }</li>
+            <li>#footer { }</li>
+           </ul> 
+        </li>
+        <li id="item">Class Selector
+            <ul class="subitem">
+                <li>.menu { }</li>
+                <li>.header { }</li>
+                <li>.footer { }</li>
+            </ul>
+        </li>
+        <li>
+            Pseudo Class Selector
+            <ul class="subitem">
+                <li>a:hover { }</li>
+                <li>a:active { }</li>
+                <li>a:visited {}</li>
+            </ul>
+        </li>
+        <li></li>
+    </ul>
+</body>
+</html>

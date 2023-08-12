@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of CSS Layers Effect</title>
+<style>
+    .container{
+        position: relative;
+    }
+    .box{
+        width: 150px;
+        height: 150px;
+        opacity: 0.9;
+        position: absolute;
+    }
+    .red{
+        width: 800px;
+        height: 140px;
+        background: #ff0000;
+        z-index: 1;
+    }
+    .green{
+        top: 30px;
+        left: 30px;
+        background: #00ff00;
+        z-index: 2;
+    }
+    .blue{
+        top: 60px;
+        left: 60px;
+        background: #0000ff;
+        z-index: 3;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+    </div>
+</body>
+</html>

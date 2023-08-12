@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Attributes Demo</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 500px;
+            height: 500px;
+            background-color: cornflowerblue;
+            outline: 5px solid black;
+        }
+        .one{
+            background-image: url(images/1.jpeg),url(images/2.jpeg),url(images/4.jpeg);
+            background-position: bottom,center,center;
+            background-repeat: repeat-y,repeat-x,no-repeat;
+            background-size: 10%,20%,100%;
+        }
+        .two{
+            background-image: linear-gradient(90deg, rgb(27, 27, 134), rgb(180, 74, 154));
+            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 33% 100%, 58% 51%, 29% 0);
+        }
+        .three{
+            background-image: radial-gradient(circle at 50% 50%, black, rgb(175, 36, 175));
+            color: white;
+            font-style: italic;
+            padding: 1rem;
+            overflow-y: scroll;
+        }
+        .four{
+            background-color: white;
+            color: crimson;
+            direction: ltr;
+            letter-spacing: 5px;
+            padding: 1rem;
+            line-height: 25px;
+            text-decoration:dashed underline;
+            text-indent: 12px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box one">
+            One
+        </div>
+        <div class="box two">
+            Two
+        </div>
+        <div class="box three">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem similique sequi accusantium ipsum. Doloribus architecto laudantium natus nihil ullam dolorum, est neque saepe consectetur fugit eaque, magni necessitatibus nostrum ipsam fuga cupiditate deleniti quibusdam. Iusto repellendus libero reprehenderit id. Laboriosam, minima vel dignissimos officia dicta exercitationem perspiciatis. Deleniti maxime voluptate consequuntur voluptates nemo libero tempore, natus similique fuga adipisci atque reprehenderit animi suscipit nisi fugit vel. Maxime earum eligendi doloribus vero quod in ullam adipisci! Provident maxime illum eaque quas laborum itaque voluptates soluta vero consequatur nulla molestiae debitis accusantium ea pariatur voluptatem at quo facilis rerum, ex minus optio accusamus. Delectus reiciendis quo aliquam? Alias repudiandae ipsam aliquid fugit exercitationem porro ipsa eveniet nihil quibusdam accusantium debitis dolor deleniti perspiciatis, enim natus delectus cumque consequatur beatae excepturi facilis sint facere culpa, sed doloremque. Vel quo quidem at eos asperiores non fugit rerum, itaque perferendis laborum quibusdam quia quasi harum consequatur fugiat maiores odit sequi! Sunt expedita recusandae saepe aperiam ex. Obcaecati a nihil quibusdam explicabo, facere, expedita possimus dolore architecto ipsa culpa nisi. Dolor sunt non in mollitia nisi amet iusto animi tempora omnis corrupti, ab autem quia ex similique culpa temporibus nulla assumenda distinctio facilis velit id itaque voluptas! Nesciunt perferendis cupiditate, quia fuga deleniti natus aut quidem deserunt sit. Quasi tenetur reprehenderit nihil voluptatibus, eligendi perferendis exercitationem minima natus repellendus explicabo nisi! Qui nisi, odit modi nostrum mollitia, porro quod ad illo accusantium obcaecati itaque quia aspernatur ab saepe reiciendis, soluta quis perferendis dolor. Blanditiis iste vero incidunt quod, animi dolor. Quaerat totam ullam quod quasi dolore in delectus excepturi error unde dolor! Unde, molestiae, quae dolorem adipisci magnam dolores sapiente doloremque dolor, modi optio animi! Dolorum, laboriosam rerum accusamus ea harum placeat quia ut, nam labore quibusdam voluptatibus amet corporis eveniet cumque nostrum optio odit ratione laborum recusandae maiores? Magni voluptatum excepturi assumenda dolorum dolores doloremque maiores earum voluptas eveniet fugiat quaerat, atque beatae optio perferendis quisquam accusamus repellendus libero, iste aliquid aliquam temporibus. Labore, assumenda esse veritatis iure nulla ipsum eaque sequi id voluptas voluptatem quos praesentium nisi. Ea porro esse hic aut. Debitis quis ducimus porro at eaque animi itaque, non mollitia deserunt rerum corporis. Iure at exercitationem blanditiis, earum tempora nam odio aut repudiandae explicabo nisi aliquid ea fuga. Repellat quo adipisci odit quia rem ipsum laboriosam praesentium porro harum. Dolor eaque non assumenda voluptatem ipsam fugiat, animi incidunt ducimus eveniet corrupti laudantium a inventore! Earum debitis necessitatibus explicabo cum hic vitae amet, voluptatibus saepe sequi a deleniti aliquid laboriosam quaerat enim numquam magni. Hic eos repellendus molestiae reprehenderit debitis ipsa dolor error neque quas sapiente, vel, nam exercitationem quae dolores mollitia quam ipsum quod. Veritatis qui quis accusamus facilis nam accusantium nihil omnis optio. Ipsam, labore? Voluptatem commodi optio dignissimos sint quaerat molestias nulla magnam modi libero, fugit, illum fuga. Molestiae, inventore! Quidem, odit rerum soluta mollitia esse earum tempore at numquam voluptate aut. Quia sed distinctio facere repudiandae, nam corporis itaque neque optio, similique sit in. Dicta doloremque ratione fuga fugit.</p>
+        </div>
+        <div class="box four">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat amet minima autem modi laudantium inventore odit nulla, nostrum obcaecati earum reprehenderit voluptates! Recusandae quam rerum consectetur, aut veritatis nobis. Vitae?</p>
+        </div>
+    </main>
+</body>
+</html>

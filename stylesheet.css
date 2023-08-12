@@ -1,0 +1,97 @@
+:root{
+    --header-bg-color: white;
+    --header-color: black;
+    --card-bg-color: rgb(170, 174, 223);
+    --card-text-color: rgb(15, 1, 15);
+    --pad-normal: .75rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: var(--header-bg-color);
+    color: var(--header-color);
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* column-gap: 40px; */
+}
+.item-container{
+    background-color: var(--card-bg-color);
+    color: var(--card-bg-color);
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(71, 65, 65,.5);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /* overflow: hidden; */
+
+    .thumb{
+        width: 100%;
+        height: 250px;
+        object-fit:cover;
+        object-position:bottom;
+        border-radius: 25px 0px 30px 0px;
+        transition: all .15s ease-in-out;
+    }
+    .content{
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+    .title{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.3rem;
+        color: var(--card-text-color);
+        padding-top: var(--pad-normal);
+        padding-left: var(--pad-normal);
+        padding-right: var(--pad-normal);
+    }
+    .desc{
+        font-family: 'calibri', sans-serif;
+        color: var(--card-text-color);
+        font-size: .9rem;
+        line-height: 1.1rem;
+        text-align: justify;
+        padding-top: var(--pad-normal);
+        padding-left: var(--pad-normal);
+        padding-right: var(--pad-normal);
+    }
+    .price{
+        font-family: 'Roboto', sans-serif;
+        color: var(--card-text-color);
+        font-size: 1rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-around;
+        padding: var(--pad-normal);
+    }
+    .btn{
+        border-radius: 5px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+        color: var(--card-text-color);
+    }
+    .info{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: var(--pad-normal);
+        background-color: var(--header-bg-color);
+        color: var(--header-color);
+        border-radius: 0 0 15px 15px;
+    }
+    &:hover .thumb{
+        filter: hue-rotate(180deg);
+    }
+}

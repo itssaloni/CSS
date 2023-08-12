@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 2</title>
+    <style>
+        main{
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+        }
+        section{
+            min-width: 350px;
+            min-height: 500px;
+            outline: 2px solid rgb(32, 34, 34);
+            background-color: blueviolet;
+        }
+        #area1{
+            display: grid;
+            /* grid-template-columns: repeat(5, 1fr); */
+            /* grid-template-columns: 20px auto 50px; */
+            grid-template-columns: repeat(5, minmax(50px, 1fr));
+            grid-template-rows: repeat(5, minmax(50px, 1fr));
+            align-items: end;
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+        .one{
+            min-width: 50px;
+            height: 50px;
+            background-color:chartreuse;
+            font-size: 3rem;
+            outline: 2px solid white;
+        }
+        .two{
+            min-width: 70px;
+            height: 50px;
+            background-color:chartreuse;
+        }
+        .three{
+            min-width: 100px;
+            height: 80px;
+            background-color:chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="area1">
+            <!-- .box.one*20 -->
+             <div class="one"></div>
+             <div class="two"></div>
+             <div class="three"></div>
+             <div class="four"></div>
+             <div class="box one"></div>
+             <div class="box one"></div>
+             <div class="box one"></div>
+             <div class="box one"></div>
+             <div class="box one"></div>
+             <div class="box one"></div>
+             <div class="box one"></div>
+             <div class="box one"></div>
+             <div class="box one"></div>
+             <div class="box one"></div>
+             <div class="box one"></div>
+             <div class="box one"></div>
+             <div class="box one"></div>
+             <div class="box one"></div>
+             <div class="box one"></div>
+             <div class="box one"></div>
+        </section>
+        <section>
+
+        </section>
+    </main>
+</body>
+</html>
