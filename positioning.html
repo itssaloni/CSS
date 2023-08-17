@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+        integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        main {
+            /* height: 2000px; */
+        }
+
+        .links {
+            /* background-color: chartreuse; */
+            border: 1px solid #ccc;
+            position: fixed;
+            /* inset: 0 0 10px 10px; */
+            bottom: 1rem;
+            right: 1rem;
+            width: 200px;
+            height: 40px;
+            /* left: 0; */
+            right: 1rem;
+            padding: 1rem;
+            border-radius: 1rem;
+            animation: moveAlong 2s ease-in-out infinite;
+        }
+
+        .links a {
+            color: blue;
+        }
+
+        a:nth-child(2) {
+            color: blueviolet;
+        }
+
+        a:nth-child(3) {
+            color: rgb(43, 226, 134);
+        }
+
+        a:nth-child(4) {
+            color: rgb(235, 147, 176);
+        }
+
+        a:nth-child(5) {
+            color: rgb(201, 233, 115);
+        }
+        .container{
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+        .card{
+            width: 400px;
+            height: 300px;
+            background-color:rgb(169, 194, 241);
+            position: relative;
+            animation: growUp 2s ease-in-out infinite alternate;
+        }
+        .card img{
+            height: 400px;
+            position: absolute;
+            z-index: 1;
+            left: -110px;
+            /* top: 25%; */
+            transform: skew(10deg) scale(.8) rotate(-10deg) translateX(10%);
+            transition: all 300ms linear;
+        }
+        .card:hover img{
+            transform: skew(0) scale(1) rotate(360deg) translateX(0);
+            filter: hue-rotate(180deg);
+        }
+
+        @keyframes growUp{
+            from{
+                transform: scale(0);
+                background-color: brown;
+            }
+            to{
+                transform: scale(1);
+            }
+        }
+        @keyframes moveAlong {
+            0% {
+                transform: translate(-1000px, 0);
+            }
+
+             75% {
+                transform: translate(0, 0);
+             }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="card">
+                <img src="images/32110-4-mickey-mouse-transparent-background.png" alt="">
+            </div>
+    </div>
+        <div class="links">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+        </div>
+    </main>
+</body>
+
+</html>
